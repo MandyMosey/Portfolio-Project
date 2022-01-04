@@ -52,6 +52,10 @@ p {
   color: white;
 }
 
+.primary-link:hover {
+  color: white;
+}
+
 .secondary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -59,6 +63,10 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.secondary-link:hover {
+  color: var(--primary-color);
 }
 
 .homepage-link {
@@ -85,4 +93,26 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
